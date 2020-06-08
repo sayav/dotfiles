@@ -23,10 +23,10 @@ Recent Files[$e]=file:$HOME/.config,file:$HOME/.local
 Recent URLs[$e]=file:$HOME/rice/
 
 [KPropertiesDialog]
-Height 1440=581
+Height 1440=498
 Height 960=525
 Width 1707=445
-Width 2560=556
+Width 2560=569
 
 [MainWindow]
 Height 1080=420
