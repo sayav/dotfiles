@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+dn=10
+
+while true; do
+    output=()
+    current_desktop=`qdbus org.kde.KWin /KWin currentDesktop`
+    for i in $(seq 1 $dn)
+        do
+            if ((10 == i)); then
+                if (($current_desktop == i)); then
+                    output+="%{F#fff}$i"
+                else
+                    output+="%{F#aaa}$i"
+                fi
+            elif (($current_desktop == i)); then
+                output+="%{F#fff}$i%{F#aaa}|"
+            else
+                output+="%{F#aaa}$i|"
+            fi
+        done
+
+    echo $output
+    sleep 0.1;
+done

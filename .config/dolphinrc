@@ -1,0 +1,57 @@
+[CompactMode]
+FontWeight=50
+
+[Desktop Entry]
+DefaultProfile=Agni.profile
+
+[DetailsMode]
+FontWeight=50
+PreviewSize=16
+
+[Favorite Profiles]
+Favorites=
+
+[General]
+Version=200
+ViewPropsTimestamp=2018,6,15,20,39,53
+
+[IconsMode]
+FontWeight=50
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/.config,file:$HOME/.local
+Recent URLs[$e]=file:$HOME/rice/
+
+[KPropertiesDialog]
+Height 1440=581
+Height 960=525
+Width 1707=445
+Width 2560=556
+
+[MainWindow]
+Height 1080=420
+Height 1440=1366
+Height 720=712
+Height 800=899
+Height 960=893
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAADnAAADwfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAMA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAwAAADwQAAAE8A////AAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAAAwD///8AAAADAAAE4gAAAWH8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawEAAAAAAAAE4gAAAIcA////AAAD9wAAA8EAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1280=825
+Width 1707=833
+Width 1920=1880
+Width 2560=1250
+
+[Open-with settings]
+CompletionMode=1
+History=chrome,code,zathu,dol,gwen,fire,subl,sub
+
+[PreviewSettings]
+Plugins=kraorathumbnail,directorythumbnail,appimagethumbnail,comicbookthumbnail,windowsimagethumbnail,windowsexethumbnail,fontthumbnail,opendocumentthumbnail,jpegthumbnail,exrthumbnail,djvuthumbnail,audiothumbnail,imagethumbnail,svgthumbnail
+
+[Search]
+What=Content
+
+[SettingsDialog]
+Height 960=448
+Width 1707=545

@@ -1,0 +1,26 @@
+[Desktop Entry]
+DefaultProfile=Agni.profile
+
+[DownloadDialog Settings]
+Height 1440=560
+Height 960=494
+Width 1707=699
+Width 2560=700
+
+[Favorite Profiles]
+Favorites=Agni.profile
+
+[KonsoleWindow]
+SaveGeometryOnExit=false
+ShowMenuBarByDefault=false
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABOIAAAVIAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+
+[Notification Messages]
+ShowPasteUnprintableWarning=true
+
+[Profile Shortcuts]
+Ctrl+Shift+M, Ctrl+Alt+M=Agni.profile

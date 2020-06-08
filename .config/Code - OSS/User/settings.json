@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Night Owl (No Italics)",
+    "workbench.startupEditor": "newUntitledFile",
+    "window.menuBarVisibility": "hidden",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontFamily": "'Dank Mono', monospace",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 15
+}

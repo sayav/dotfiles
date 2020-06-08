@@ -1,0 +1,285 @@
+[color]
+
+trans = #00000000
+white = #FFFFFF
+black = #000000
+
+bg = #00000000
+fg = #fff
+fg-alt = #A9ABB0
+
+acolor = #926d7f
+bcolor = #333
+curgent = #e53935
+coccupied = #1e88e5
+
+## Material Colors
+
+red = #e53935
+pink = #d81b60
+purple = #8e24aa
+deep-purple = #5e35b1
+indigo = #3949ab
+blue = #1e88e5
+light-blue = #039be5
+cyan = #00acc1
+teal = #00897b
+green = #43a047
+light-green = #7cb342
+lime = #c0ca33
+yellow = #fdd835
+amber = #ffb300
+orange = #fb8c00
+deep-orange = #f4511e
+brown = #6d4c41
+grey = #757575
+blue-gray = #546e7a
+
+;==========================================================
+
+[bar/main]
+monitor = eDP-1
+width = 98.5%
+height = 40
+offset-x = 0.75%
+offset-y = 0.5%
+bottom = false
+line-size = 1
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+border-size = 0
+border-color = ${color.bg}
+
+module-margin-left = 1
+module-margin-right = 1
+
+;==========================================================
+
+font-0 = "Fantasque Sans Mono:pixelsize=14;2"
+font-1 = "Material Icons:size=13;4"
+
+;==========================================================
+
+cursor-click = pointer
+# cursor-scroll = ns-resize
+
+;tray-position = right
+;tray-padding = 0
+;tray-maxsize = 16
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+;== Module Location ========================================================
+
+modules-left = workspaces
+modules-center = xwindow
+modules-right = mpd volume battery network date powermenu
+fixed-center = true
+
+[bar/displays]
+monitor = eDP-1
+width = 98.5%
+height = 40
+offset-x = 0.75%
+offset-y = 0.5%
+bottom = true
+line-size = 2
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+border-size = 3
+border-color = ${color.bg}
+
+module-margin-left = 1
+module-margin-right = 1
+
+;==========================================================
+
+font-0 = "Fantasque Sans Mono:pixelsize=14;2"
+font-1 = "Material Icons:size=13;4"
+
+;==========================================================
+
+cursor-click = pointer
+
+;== Module Location ========================================================
+
+modules-center = display_music display_status display_news display_youtube display_nba
+fixed-center = true
+override-redirect = true
+ 
+ 
+;== Modules ========================================================
+
+[module/display_music]
+type = custom/text
+content = 
+content-padding = 2
+content-background = ${color.acolor}
+content-foreground = ${color.bcolor}
+click-left = ~/rice/displays/music.sh
+
+[module/display_status]
+type = custom/text
+content = 
+content-padding = 2
+content-background = ${color.acolor}
+content-foreground = ${color.bcolor}
+click-left = ~/rice/displays/status.sh
+
+[module/display_news]
+type = custom/text
+content = 
+content-padding = 2
+content-background = ${color.acolor}
+content-foreground = ${color.bcolor}
+click-left = ~/rice/displays/news.sh
+
+[module/display_youtube]
+type = custom/text
+content = 
+content-padding = 2
+content-background = ${color.acolor}
+content-foreground = ${color.bcolor}
+click-left = ~/rice/displays/youtube.sh
+
+[module/display_nba]
+type = custom/text
+content = 
+content-padding = 2
+content-background = ${color.acolor}
+content-foreground = ${color.bcolor}
+click-left = ~/rice/displays/nba.sh
+
+[module/arch]
+type = custom/text
+content = 
+;alt-icon = 
+content-padding = 2
+content-background = ${color.acolor}
+content-foreground = ${color.bcolor}
+click-left = rmenu_g
+
+[module/workspaces]
+type = custom/script
+exec = ~/rice/polybar/workspaces
+tail = true
+
+;==========================================================
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+format-online = <label-song>
+icon-play = 
+icon-pause = 
+label-song-maxlen = 20
+label-song-ellipsis = true
+
+label-song =  %title%
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-seekb = 
+icon-seekf = 
+icon-random = 🔀
+icon-repeat = 🔁
+icon-repeatone = 🔂
+icon-single = 🔂
+icon-consume = ✀
+
+bar-progress-width = 25
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
+;==========================================================
+
+[module/battery]
+type = internal/battery
+full-at = 99
+time-format = %H:%M
+battery = BAT0
+adapter = ADP1
+format-charging = <animation-charging> <label-charging>
+;label-charging = %percentage%% (%time%)
+label-charging = %percentage%%
+format-discharging = <ramp-capacity> <label-discharging>
+;label-discharging = %percentage%% (%time%)
+label-discharging = %percentage%%
+format-full = <label-full>
+
+format-full-prefix = " "
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+ramp-capacity-0-foreground = ${color.red}
+ramp-capacity-foreground   = ${color.fg}
+bar-capacity-width = 10
+
+animation-charging-0 = ""
+animation-charging-1 = ""
+animation-charging-2 = ""
+animation-charging-3 = ""
+animation-charging-4 = ""
+
+animation-charging-framerate = 750
+
+[module/volume]
+type = internal/pulseaudio
+
+interval = 1
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
+format-muted-prefix = " "
+label-muted = MUTE
+use-ui-max = false
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+ramp-volume-5 = 
+ramp-volume-6 = 
+
+[module/network]
+type = custom/script
+exec = ~/rice/polybar/check-network
+click-left = kcmshell5 kcm_networkmanagement
+tail = true
+
+[module/date]
+type = internal/date
+interval = 30
+label =  %time%
+time =  %H:%M %p
+time-alt =  %Y-%m-%d
+
+[module/powermenu]
+type = custom/text
+content = 
+click-left = qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout 1 2 2
+
+[module/xwindow]
+type = internal/xwindow
+
+; Available tags:
+;   <label> (default)
+format = <label>
+# format-padding = 4
+
+; Available tokens:
+;   %title%
+; Default: %title%
+label = %title%
+label-maxlen = 50
+
+;== EOF ========================================================

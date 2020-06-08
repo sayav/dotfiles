@@ -1,0 +1,6 @@
+rofi.theme:         miami
+rofi.font:          hack 12
+rofi.modi:          drun,window
+rofi.display-drun:       
+rofi.display-window:     🗗
+
